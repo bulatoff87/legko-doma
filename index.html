@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#174b3b">
+  <meta name="description" content="Легко дома — клининг квартир. Чистый дом. Свободный день. Узнайте о составе уборки и составьте свой список задач.">
+  <title>Легко дома — чистый дом, свободный день</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="header">
+    <a class="brand" href="#" aria-label="Легко дома — главная"><img src="logo-light.png" alt="Легко дома. Чистый дом. Свободный день." width="230" height="76"></a>
+    <nav aria-label="Основная навигация">
+      <a href="#care">Об уборке</a><a href="#steps">Как это работает</a><a href="#questions">Вопросы</a>
+    </nav>
+    <a class="button button-small header-action" href="#tasks">Выбрать задачи <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="green-dot"></span>Клининг квартир · Легко дома</p>
+        <h1 id="hero-title">Чистый дом.<br><em>Свободный день.</em></h1>
+        <p class="hero-description">Прогулка, встреча с друзьями или просто тишина с чашкой чая. Пусть в выходном останется место для вас — а уборку возьмём на себя.</p>
+        <div class="hero-actions"><a class="button" href="#care">Что входит в уборку <span aria-hidden="true">↗</span></a><a class="text-link" href="#tasks">Составить свой список <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="note-mark" aria-hidden="true">✓</span><p>Ваш дом — ваши привычки.<br><span>Состав работ и пожелания согласуем заранее.</span></p></div>
+      </div>
+      <figure class="hero-photo">
+        <img src="home-hero.png" alt="Светлая обжитая кухня с деревянным столом и зелёным растением" width="1536" height="1024" fetchpriority="high">
+        <figcaption><span class="photo-note">Иллюстрация</span><span class="photo-message">Дома порядок.<br><strong>День принадлежит вам.</strong></span></figcaption>
+        <span class="photo-stamp" aria-hidden="true">Можно<br>выдохнуть <span>↗</span></span>
+      </figure>
+    </section>
+
+    <section class="life-section" aria-labelledby="life-title">
+      <div class="container life-grid">
+        <div><p class="eyebrow">Знакомая история?</p><h2 id="life-title">«Сейчас уберусь —<br>и наконец отдохну».</h2></div>
+        <div class="life-copy"><p>Но за кухней находится ванная, за ванной — полы. И свободный день незаметно превращается в ещё один рабочий.</p><p class="life-accent">Не всё нужно успевать самому.</p></div>
+      </div>
+      <div class="container moments">
+        <article><span class="moment-number">01 / ПОСЛЕ РАБОЧЕЙ НЕДЕЛИ</span><h3>Когда хочется<br>просто отдохнуть.</h3><p>Оставить время на сон, прогулку и свои планы.</p></article>
+        <article><span class="moment-number">02 / ПОВСЕДНЕВНЫЙ БЫТ</span><h3>Когда дела<br>снова накопились.</h3><p>Разобраться с уборкой без бесконечного «потом».</p></article>
+        <article><span class="moment-number">03 / ПЕРЕД ВСТРЕЧЕЙ</span><h3>Когда ждёте гостей,<br>а не новые заботы.</h3><p>Сосредоточиться на встрече, а не на тряпке и пылесосе.</p></article>
+      </div>
+    </section>
+
+    <section id="care" class="care-section container" aria-labelledby="care-title">
+      <div class="section-heading"><div><p class="eyebrow">Внимание к повседневным деталям</p><h2 id="care-title">Что нужно вашему дому?</h2></div><p>Выберите зону и посмотрите основные задачи. Точный состав уборки зависит от состояния квартиры и ваших пожеланий.</p></div>
+      <div class="care-layout">
+        <div class="care-tabs" role="tablist" aria-label="Зоны уборки" aria-orientation="vertical">
+          <button id="tab-home" type="button" role="tab" aria-controls="panel-home" aria-selected="true" tabindex="0"><span class="tab-number">01</span>Комнаты и коридор<span aria-hidden="true">↗</span></button>
+          <button id="tab-kitchen" type="button" role="tab" aria-controls="panel-kitchen" aria-selected="false" tabindex="-1"><span class="tab-number">02</span>Кухня<span aria-hidden="true">↗</span></button>
+          <button id="tab-bathroom" type="button" role="tab" aria-controls="panel-bathroom" aria-selected="false" tabindex="-1"><span class="tab-number">03</span>Ванная<span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="care-panels">
+          <section id="panel-home" role="tabpanel" aria-labelledby="tab-home"><p class="panel-label">Порядок там, где проходит жизнь</p><h3>Пыль, полы,<br>привычные поверхности.</h3><ul class="check-list"><li>Удаление пыли с доступных поверхностей</li><li>Уборка пола и доступных плинтусов</li><li>Очистка зеркал от повседневных следов</li><li>Особое внимание местам, которые вы отметите</li></ul></section>
+          <section id="panel-kitchen" role="tabpanel" aria-labelledby="tab-kitchen" hidden><p class="panel-label">После завтраков, ужинов и разговоров</p><h3>Снова приятно<br>зайти на кухню.</h3><ul class="check-list"><li>Очистка рабочей поверхности</li><li>Протирание внешних фасадов</li><li>Очистка мойки и смесителя</li><li>Уборка пола в кухонной зоне</li></ul></section>
+          <section id="panel-bathroom" role="tabpanel" aria-labelledby="tab-bathroom" hidden><p class="panel-label">Чистота в ежедневных мелочах</p><h3>Уютное начало<br>и завершение дня.</h3><ul class="check-list"><li>Очистка раковины и смесителя</li><li>Уход за ванной или душевой зоной</li><li>Очистка зеркал и внешних поверхностей</li><li>Уборка пола</li></ul></section>
+        </div>
+      </div>
+    </section>
+
+    <section id="steps" class="steps-section" aria-labelledby="steps-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Меньше сложностей</p><h2 id="steps-title">От списка дел —<br>к вашим планам.</h2></div><p>Без одинаковых решений для всех: сначала разбираемся, какая помощь нужна именно вам.</p></div>
+      <ol class="steps"><li><span>01</span><h3>Определяем задачи</h3><p>Какие комнаты убрать, что требует особого внимания и какие у вас пожелания.</p></li><li><span>02</span><h3>Согласуем детали</h3><p>Состав работ, стоимость, удобное время и формат доступа в квартиру.</p></li><li><span>03</span><h3>Освобождаем день</h3><p>Занимаемся согласованной уборкой, пока вы уделяете время своим делам.</p></li></ol>
+    </div></section>
+
+    <section id="tasks" class="tasks-section container" aria-labelledby="tasks-title">
+      <div class="tasks-intro"><p class="eyebrow">Начните с малого</p><h2 id="tasks-title">Что вы хотите<br>снять с себя?</h2><p>Отметьте задачи и сохраните список. Он останется у вас — его удобно использовать при обсуждении уборки.</p><div class="selection-count" aria-live="polite"><strong id="task-count">0</strong><span id="task-count-label">задач выбрано</span></div></div>
+      <div class="task-picker"><fieldset><legend>Мой список уборки</legend>
+        <label><input type="checkbox" value="Убрать полы"><span>Убрать полы</span><span class="checkbox-decoration" aria-hidden="true"></span></label>
+        <label><input type="checkbox" value="Протереть пыль"><span>Протереть пыль</span><span class="checkbox-decoration" aria-hidden="true"></span></label>
+        <label><input type="checkbox" value="Привести в порядок кухню"><span>Привести в порядок кухню</span><span class="checkbox-decoration" aria-hidden="true"></span></label>
+        <label><input type="checkbox" value="Убрать ванную"><span>Убрать ванную</span><span class="checkbox-decoration" aria-hidden="true"></span></label>
+        <label><input type="checkbox" value="Очистить зеркала"><span>Очистить зеркала</span><span class="checkbox-decoration" aria-hidden="true"></span></label>
+      </fieldset><button class="button" id="save-list" type="button" disabled>Сохранить список <span aria-hidden="true">↓</span></button><p class="privacy-note">Скачивается текстовый файл. Данные никуда не отправляются.</p><p id="save-status" class="save-status" role="status"></p></div>
+    </section>
+
+    <section id="questions" class="faq-section container" aria-labelledby="faq-title"><div><p class="eyebrow">Перед первым заказом</p><h2 id="faq-title">О чём обычно<br>спрашивают.</h2></div><div class="faq-list">
+      <details><summary>Сколько стоит уборка?<span aria-hidden="true">+</span></summary><p>Стоимость зависит от площади, состояния квартиры и состава работ. Её нужно согласовать после обсуждения задачи — до начала уборки.</p></details>
+      <details><summary>Можно убрать только отдельные зоны?<span aria-hidden="true">+</span></summary><p>Составьте список зон и пожеланий. Возможность отдельной уборки кухни, ванной или других частей квартиры согласуется при обращении.</p></details>
+      <details><summary>Нужно ли оставаться дома?<span aria-hidden="true">+</span></summary><p>Формат доступа в квартиру и ваше присутствие нужно согласовать заранее. Важно, чтобы выбранный вариант был удобен для вас.</p></details>
+      <details><summary>Что подготовить перед уборкой?<span aria-hidden="true">+</span></summary><p>Отметьте деликатные поверхности и вещи, которые не нужно трогать. По возможности освободите доступ к тем местам, где требуется уборка.</p></details>
+    </div></section>
+
+    <section class="closing container" aria-labelledby="closing-title"><span class="closing-symbol" aria-hidden="true">⌂</span><p class="eyebrow">Легко дома</p><h2 id="closing-title">Пусть выходной<br>останется <em>выходным.</em></h2><p>Мы готовимся к запуску. Контакты для записи<br class="desktop-break"> появятся здесь — чуть позже.</p><a class="text-link" href="#tasks">А пока — сохраните свой список задач <span aria-hidden="true">↗</span></a></section>
+  </main>
+
+  <footer class="footer container"><p><strong>Легко дома</strong><span>Чистый дом. Свободный день.</span></p><a href="#">Наверх ↑</a><small>Интерьер на странице — иллюстрация, созданная с помощью ИИ.</small></footer>
+</body>
+</html>
